@@ -1,3 +1,6 @@
+/**
+ * CSS universal elements 
+ */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -17,54 +20,63 @@ p {
     font-size: 16px;
 }
 
-.header {
+ /* setup initial header padding, font, and colors */
+header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
-
-.header h1 {
+/* formate the h1 objects in headers to keep them in line and increase font size */
+header h1 {
     display: inline-block;
     font-size: 48px;
 }
-
-.header h1 .seo {
+/* adjust the seo to a lighter color in the title */
+header h1 .seo {
     color: #d9dcd6;
 }
-
-.header div {
+/* adjust the header's div objects padding, location, float, font style, and font size */
+header div {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-
-.header div ul {
+/* remove ul list types */
+header div ul {
     list-style-type: none;
 }
-
-.header div ul li {
+/* make the list inline and push away from the end of the edge */
+header div ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
-.hero {
-    height: 800px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
+/* difines padding, clear, font, and text slignment for universal footer objects*/
+ footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+/* Change font size to 20 px */
+footer h2 {
+    font-size: 20px;
 }
 
+/**
+ * CSS Class objects
+ */
+
+ /* setup initial settings for width, display type, and distance from edge */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
-
+/* adjust content div's margin, padding, height, font style, and color */
 .content div {
     margin-bottom: 20px;
     padding: 50px;
@@ -73,26 +85,28 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
-
+/* icrease content image height */
 .content img {
     max-height: 200px;
 }
-
+/* increase margin at the bottom, and font-size for h2 inside content class object */
 .content h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
-
+/* define float left images as float left and have 25 px from right. 
+this is a class incase we add more objects later */
 .float-left {
     float: left;
     margin-right: 25px;
 }
-
+/* define float right images as float right and have 25 px from left. 
+this is a class incase we add more objects later */
 .float-right {
     float: right;
     margin-left: 25px;
 }
-
+/* define benefits class */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -103,31 +117,32 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
-
+/* adjusts div margin and color for benefits class */
 .benefits div {
     margin-bottom: 32px;
     color: #ffffff;
 }
-
+/* Adjusts margin and text alignment of h3 for benefits class h3 elements */
 .benefits h3 {
     margin-bottom: 10px;
     text-align: center;
 }
-
+/* adjusts all images in benefits class section's display type, margin, and max-width */
 .benefits img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-
-.footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-}
-
-.footer h2 {
-    font-size: 20px;
+/**
+ * IDs
+ */
+/* create an id object for the main image used for the website */
+ #hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
 }
