@@ -9,6 +9,6 @@ I wanted to create a codebase that follows accessiblity standards and is optimiz
 * heading attributes are in sequential order
 * Title elements are concise and descriptive
 
-This project can be viewed by going to [link]()
+This project can be viewed by going to [link](https://chrisosbii.github.io/01cbQkMxXw/)
 
-![Horiseon Landing Page Sreenshoot](https://courses.bootcampspot.com/courses/3169/files/2566198/preview)
+![Horiseon Landing Page Sreenshoot](./assets/images/chrisosbii.github.io_01cbQkMxXw.png)
